@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "speech-recognition"
+version = "0.0.1"
+description = ""
+authors = ["Abramov Evgeniy <61637662+iriswolf@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9, <= 3.10"
+pydub = "^0.25.1"
+
+
+[tool.poetry.group.vosk.dependencies]
+vosk = "^0.3.45"
+
+
+[tool.poetry.group.whisper.dependencies]
+torch = "^2.4.1"
+openai-whisper = "^20240927"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
